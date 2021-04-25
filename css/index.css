@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #f3f3f3;
+    /*background-image: url(https://382451-1200779-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/11/White-honeycomb-hexagon-Mirrored.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+/*____________________ BANNER INICIAL ____________________*/
+.container-portada{
+    width: 97%;
+    height: 580px;
+    margin: auto;
+    position: relative;
+    background-image: url(https://wallpaperaccess.com/full/1884154.jpg);
+    background-size: 150%;
+    animation: movimiento 20s infinite linear alternate;
+    z-index: -1;
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+
+.capa-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #121212);
+    opacity: 0.5;
+}
+
+.container-details{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+
+.details{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    top: 150px;
+    color: white;
+}
+
+.details h1{
+    font-size: 60px;
+    font-weight: 600;
+    border: 2px solid white;
+    z-index: 20;
+}
+
+.details .backgroundDetails{
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    position: absolute;
+    background-color: #121212;
+    z-index: -1;
+}
+
+.details p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.details button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.details button:hover{
+    background: white;
+    color: black;
+}
+
+
+/*Articulo*/
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+article{
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+article h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+article hr{
+    max-width: 500px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+article p{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 700px){
+    .container-portada{
+        width: 97%;
+        height: 330px;
+        margin: auto;
+        position: relative;
+        background-image: url(https://wallpaperaccess.com/full/1884154.jpg);
+        background-size: 150%;
+        animation: movimiento 20s infinite linear alternate;
+        z-index: -1;
+    }
+    .details{
+        width: 100%;
+        max-width: 330px;
+        position: relative;
+        margin: auto;
+        top: 80px;
+        color: white;
+    }
+    
+    .details h1{
+        font-size: 30px;
+        font-weight: 600;
+        border: 2px solid white;
+        z-index: 20;
+    }
+    
+    .details .backgroundDetails{
+        width: 100%;
+        height: 100%;
+        opacity: 70%;
+        position: absolute;
+        background-color: #121212;
+        z-index: -1;
+    }
+    
+}
+/*__________________________________________________*/
+
+
+/*____________________ TEXTO ____________________*/
+.parrafo{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.texto{
+    padding: 40px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.division{
+	width: 95%;
+	height: 1px;
+	background: #121212;
+	margin: auto;
+}
+/*__________________________________________________*/
+
+.inicioGaleria h1{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0672d0;
+    text-shadow: 6px 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*____________________ GALERÍA ____________________*/
+.rowGaleria{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rowGaleria .columnGaleria img{
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+.hoverJuego{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hoverJuego:hover{
+    transition: all .3s;
+    transform: scale(1.15);
+    z-index: 15;
+}
+
+.hoverJuego:hover img{
+    filter: blur(6px);
+}
+
+.hoverJuego:before, .hoverJuego:after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 6px;
+    background: #EF0005;
+    transition: all .3s;
+    z-index: 10;
+}
+
+.hoverJuego:before{left: -100%; top: 10px;}
+.hoverJuego:after{left: 100%; bottom: 10px;}
+
+.hoverJuego:hover:before, .hoverJuego:hover:after{
+    left: 15px;
+}
+
+.nombreJuego{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    transition: all .3s;
+    transform: scale(1.5);
+    opacity: 0;
+    z-index: 11;
+}
+
+.hoverJuego:hover .nombreJuego{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.nombreJuego h1, p{
+    width: 100%;
+    margin: auto;
+    color: #f3f3f3;
+    padding: 10px, 20px;
+    z-index: 11;
+}
+
+.capaBase{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #121212;
+    transition: all .3s;
+    transform: scale(1.5);
+    opacity: 0;
+    z-index: 9;
+}
+
+.hoverJuego:hover .capaBase{
+    transform: scale(1);
+    opacity: 0.75;
+    z-index: 9;
+}
+
+@media (max-widt: 600px){
+    .columnGaleria{
+        flex: 100%;
+    }
+}
+/*__________________________________________________*/
+

@@ -1,0 +1,146 @@
+
+/*---------------------------PERSONAJES Y ENEMIGOS-------------------------------*/
+.container{
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: left;
+    transition: all 0.25s;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.container .card img{
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+}
+
+.container .card h4{
+    font-weight: 600;
+    text-align: left;
+    margin: 10px;
+}
+
+.divisionImg {
+    border-top: 1px solid #121212;
+    height: 2px;
+    width: 80%;
+    padding: 0;
+    margin: auto;
+  }
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+
+
+
+/*---------------------------GAMEPLAY-------------------------------*/
+.containerGameplay{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.containerGameplay .card{
+    width: 100%;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 40px;
+    text-align: left;
+    transition: all 0.25s;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerGameplay .card img{
+    width: 400px;
+    max-width: 400px;
+}
+
+.containerGameplay .card h2{
+    width: 600px;
+    max-width: 600px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 20px 10px;
+}
+
+.divisionImg {
+    border-top: 1px solid #121212;
+    height: 2px;
+    width: 80%;
+    padding: 0;
+    margin: auto;
+  }
+
+.containerGameplay .card p{
+    width: 600px;
+    max-width: 600px;
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 40px 10px;
+    text-align: justify;
+}
+
+.containerGameplay .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.containerGameplay .card li{
+    list-style: none;
+}
+
+@media (max-width: 600px){
+    .containerGameplay .card img{
+        width: 390px;
+        max-width: 390px;
+    }
+    .containerGameplay .card h2{
+        width: 350px;
+        max-width: 350px;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px 20px 10px;
+    }
+    .containerGameplay .card p{
+        width: 350px;
+        max-width: 350px;
+        padding: 0 1rem;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 40px 10px;
+        text-align: justify;
+    }
+}
+
+/*---------------------------CONSEJOS-------------------------------*/

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #f3f3f3;
+    /*background-image: url(https://382451-1200779-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/11/White-honeycomb-hexagon-Mirrored.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+/*____________________ BANNER INICIAL ____________________*/
+.container-portada{
+    width: 97%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    background-image: url(https://cdn.atomix.vg/wp-content/uploads/2015/02/persona-1.png);
+    background-size: 120%;
+    animation: movimiento 20s infinite linear alternate;
+    z-index: -1;
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+
+.capa-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #121212);
+    opacity: 0.7;
+}
+
+.container-details{
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    margin-left: 20px;
+    text-align: left;
+}
+
+
+.details{
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    top: 90px;
+    color: white;
+}
+
+.details h1{
+    font-size: 55px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.details p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.details button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.details button:hover{
+    background: white;
+    color: black;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .container-portada{
+        width: 97%;
+        height: 200px;
+        margin: auto;
+        position: relative;
+        background-image: url(https://cdn.atomix.vg/wp-content/uploads/2015/02/persona-1.png);
+        background-size: 120%;
+        animation: movimiento 20s infinite linear alternate;
+        z-index: -1;
+    }
+    
+    @keyframes movimiento{
+        from{
+            background-position: bottom left;
+        }to{
+            background-position: top right;
+        }
+    }
+    
+    
+    .capa-gradient{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: -webkit-linear-gradient(left, black, #121212);
+        opacity: 0.7;
+    }
+    
+    .container-details{
+        width: 90%;
+        max-width: 400px;
+        position: relative;
+        margin-left: 10px;
+        text-align: left;
+    }
+    
+    
+    .details{
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+        top: 20px;
+        color: white;
+    }
+    
+    .details h1{
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .details p{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 100;
+        margin-left: 10px;
+    }
+    
+    .details button{
+        padding: 10px 20px;
+        font-size: 16px;
+        background: none;
+        border-style: none;
+        border: 1px solid white;
+        color: white;
+        margin-top: 20px;
+        transition: background 300ms;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    
+    .details button:hover{
+        background: white;
+        color: black;
+    }
+}
+
+/*Articulo*/
+
+main{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+article{
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+article h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+article hr{
+    max-width: 500px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+article p{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 500px){
+    .details p{
+        font-size: 18px;
+    }
+}
+/*__________________________________________________*/
+
+
+/*____________________ TEXTO ____________________*/
+.parrafo{
+    display: inline-flex;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px;
+}
+.texto{
+    margin: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+.parrafo2{
+    display: inline-flex;
+    width: 90%;
+    max-width: 350px;
+    margin: 20px;
+}
+.caracteristicasJuego{
+    margin: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+/*__________________________________________________*/
+
+.inicioGaleria h1{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0672d0;
+    text-shadow: 6px 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/*____________________ GALERÍA ____________________*/
+
+.galeriaImagenes{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.galeriaImagenes .img-card img{
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/** Modal **/
+.botonCerrarGaleria{
+    display: none;
+    position: fixed;
+    align-content: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+.botonCerrarGaleria #myModalImg{
+    /*width: 100%;
+    max-width: 800px;*/
+    height: 100%;
+    max-height: 600px;
+    width: auto;
+    display: flex;
+    margin: auto;
+}
+.cerrarGaleria{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    color:#f1f1f1;
+    font-weight:bold;
+    transition:0.3s;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+@media only screen and (max-width: 700px) {
+    .botonCerrarGaleria #myModalImg{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: flex;
+        margin: auto;
+    }
+}
+
+/*__________________________________________________*/

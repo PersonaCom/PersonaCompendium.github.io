@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Persona Index</title>
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/personaIntro.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/tarjetas.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/selectorCategorias.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+
+
+
+<!--   ______________________   HEADER   ______________________  -->
+<header class="header">
+    <div class="containerHeader">
+       <div class="header-main">
+          <div class="logo">
+            <img src="../img/logo-sinFondo.png" title="logo">
+          </div>
+          <div class="open-nav-menu">
+             <span></span>
+          </div>
+          <div class="menu-overlay">
+          </div>
+          <nav class="nav-menu">
+            <div class="close-nav-menu">
+                >>
+            </div>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="../index.html">Inicio</a>
+                 </li>
+               <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Juegos</a>
+                  <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">Persona 1</a></li>
+                      <li class="menu-item"><a href="#">Persona 2</a></li>
+                      <li class="menu-item"><a href="#">Persona 3</a></li>
+                      <li class="menu-item"><a href="#">Persona 4</a></li>
+                      <li class="menu-item"><a href="#">Persona 5</a></li>
+                  </ul>
+               </li>
+               <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Consolas</a>
+                  <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">Playstation 1</a></li>
+                      <li class="menu-item"><a href="#">Playstation 2</a></li>
+                      <li class="menu-item"><a href="#">Playstation 3</a></li>
+                      <li class="menu-item"><a href="#">Playstation 4</a></li>
+                      <li class="menu-item"><a href="#">Playstation Portable</a></li>
+                      <li class="menu-item"><a href="#">Playstation Vita</a></li>
+                  </ul>
+               </li>
+               <li class="menu-item">
+                  <a href="#" style="color: #007bff;">Velvet Room</a>
+               </li>
+            </ul>
+          </nav>
+       </div>
+    </div>
+</header>
+<!--   __________________________________________________________   -->
+
+<!--   ______________________   BANNER   ______________________   -->
+<div class="container-portada">
+    <div class="capa-gradient"></div>
+    <div class="container-details">
+        <div class="details">
+            <h1>SHIN MEGAMI TENSEI: PERSONA 1</h1>
+        </div>
+    </div>
+</div>
+<!--   __________________________________________________________   -->
+
+
+<!--   ______________________   TEXTO   ______________________   -->
+<div class="parrafo">
+    <div class="texto">
+        Revelations: Persona, lanzado en Japón como Megami Ibunroku Persona (女神異聞録ペルソナ), 
+        es el primer juego de la serie de RPG Persona. El juego fue originalmente lanzado en la consola PlayStation para 
+        Japón y Norte América; la versión japonesa tuvo un port para Windows. Basado en un Japón contemporáneo, 
+        Revelations: Persona está protagonizado por un grupo de estudiantes de preparatoria que, armados con armas y 
+        enlazados a seres sobrenaturales conocidos como Persona, se unen para luchar contra los demonios que invaden su 
+        ciudad. 
+    </div>
+</div>
+<div class="parrafo2">
+    <div class="caracteristicasJuego">
+        <b> Plataformas: </b>Playstation 1, PC, Playstation Portable
+        <br>
+        <br>
+        <b>Género: </b>RPG
+        <br>
+        <br>
+        <b>Lanzamiento en Japón: </b>29 de abril de 2009
+        <br>
+        <b>Lanzamiento Global: </b>06 de julio de 2010
+        <br>
+    </div>
+</div>
+<!--   __________________________________________________________   -->
+<br>
+<br>
+<br>
+<div class="division"></div>
+<!--   ______________________   SELECTOR DE CATEGORIAS    ______________________   -->
+<div class="wrapper">
+    <nav>
+        <div class="items">
+            <input class="item" type="submit" value="Personajes" onclick="showPersonajes()">
+            <input class="item" type="submit" value="Sombras" onclick="showSombras()">
+            <input class="item" type="submit" value="Gameplay" onclick="showGameplay()">
+            <input class="item" type="submit" value="Consejos" onclick="showConsejos()">
+        </div>
+    </nav>
+    <br>
+    <div class="gallery">
+        <div id="personajes" style="display: none;">
+            <div class="image" data-name="bag">
+                <span>
+                    <div class="container">
+                        <div class="card">
+                            <img src="https://i.pinimg.com/originals/d1/7c/c5/d17cc5d02889092b7b5f07287d8c44f1.jpg" alt="">
+                            <div class="divisionImg"></div>
+                            <h4>Personaje</h4>
+                            <h4>Persona</h4>
+                            <p>Breve descripción del personaje</p>
+                        </div>
+                    </div>       
+                </span>
+            </div>
+        </div>
+        <div id="sombras" style="display: none">
+            <div class="image" data-name="bag">
+                <span>
+                    <div class="container">
+                        <div class="card">
+                            <img src="https://i.pinimg.com/originals/ab/63/47/ab63477a5071c79e8d201112db8e4558.png" alt="">
+                            <div class="divisionImg"></div>
+                            <h4>Nombre</h4>
+                            <h4>Arcana</h4>
+                            <p>Breve descripción de la sombra</p>
+                        </div>
+                    </div>       
+                </span>
+            </div>
+        </div>
+        <div id="gameplay" style="display: none">
+            <div class="imageGameplay" data-name="bag">
+                <span>
+                    <div class="containerGameplay">
+                        <div class="card">
+                            <li>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41YOV-N5VCL.jpg" alt="">
+                            </li>
+                            <li>
+                                <h2>Parte del gameplay</h2>
+                                <div class="divisionImg"></div>
+                                <p>Descripción de la jugabilidad</p>
+                            </li>
+                        </div>
+                    </div>       
+                </span>
+            </div>
+        </div>
+        <div id="consejos" style="display: none">
+            <div class="imageGameplay" data-name="bag">
+                <span>
+                    <div class="containerGameplay">
+                        <div class="card">
+                            <li>
+                                <h2>Titulo del consejo</h2>
+                                <div class="divisionImg"></div>
+                                <p>Descripción del consejo</p>
+                            </li>
+                            <li>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41YOV-N5VCL.jpg" alt="">
+                            </li>
+                        </div>
+                    </div>       
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--   __________________________________________________________   -->
+
+<div class="division"></div>
+<br>
+<br>
+<br>
+<div class="inicioGaleria">
+    <h1>Galería</h1>
+</div>
+<br>
+<!--   ______________________   GALERÍA    ______________________   -->
+<div class="galeriaImagenes">
+    <div class="columnaGaleria">
+        <div class="img-card"><img src="https://images-na.ssl-images-amazon.com/images/I/71Gx3aRMDdL._AC_SL1500_.jpg" alt="Images!!"></div>
+    </div>
+    <div class="columnaGaleria"> 
+        <div class="img-card"><img src="https://i.ytimg.com/vi/SaQrgXxZmxA/maxresdefault.jpg" alt="Images!!"></div>
+        <div class="img-card"><img src="https://cdn.atomix.vg/wp-content/uploads/2015/02/persona-1.png" alt="Images!!"></div>
+    </div>
+    <div class="columnaGaleria">  
+        <div class="img-card"><img src="http://michibiku.com/wp-content/uploads/2016/09/persona-psp-a-800x445.jpg" alt="Images!!"></div>
+        <div class="img-card"><img src="https://i.ytimg.com/vi/MCkHmlqzvY0/hqdefault.jpg" alt="Images!!"></div>
+    </div>
+</div>
+
+<div class="botonCerrarGaleria">
+    <span class="cerrarGaleria">x</span>
+
+    <img src="" alt="" id="myModalImg">
+</div>
+<!--   __________________________________________________________   -->
+
+<br>
+<br>
+
+<!--   ______________________   FOOTER    ______________________   -->
+<footer class="footer">
+    <div class="containerFooter">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Persona Compendium</h4>
+                <ul>
+                    <li>Aquí podras encontrar consejos sobre los diversos juegos 
+                        de la franquicia persona.
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col"></div>
+            <div class="footer-col">
+                <h4>Siguenos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-patreon"></i></a>
+                </div>
+            </div>
+            <img class="imgFooter" src="../img/footer-escuelas.png" alt="">
+        </div>  
+        
+    </div>
+</footer>
+<!--   __________________________________________________________   -->
+
+<!--   __________________________SCRIPTS__________________________   -->
+<script src="../js/portafolio.js"></script>
+<script src="../js/script_Header.js"></script>
+<script src="../js/vistaPrevia.js"></script>
+<!--   __________________________________________________________   -->
+
+</body>
+</html>
