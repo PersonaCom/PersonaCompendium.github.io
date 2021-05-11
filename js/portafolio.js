@@ -1,5 +1,14 @@
 
+function showSinopsis(){
+    document.getElementById('sinopsis').style.display='';
+    document.getElementById('personajes').style.display='none';
+    document.getElementById('sombras').style.display='none';
+    document.getElementById('gameplay').style.display='none';
+    document.getElementById('consejos').style.display='none';
+}
+
 function showPersonajes(){
+    document.getElementById('sinopsis').style.display='none';
     document.getElementById('personajes').style.display='';
     document.getElementById('sombras').style.display='none';
     document.getElementById('gameplay').style.display='none';
@@ -7,6 +16,7 @@ function showPersonajes(){
 }
 
 function showSombras(){
+    document.getElementById('sinopsis').style.display='none';
     document.getElementById('personajes').style.display='none';
     document.getElementById('sombras').style.display='';
     document.getElementById('gameplay').style.display='none';
@@ -14,6 +24,7 @@ function showSombras(){
 }
 
 function showGameplay(){
+    document.getElementById('sinopsis').style.display='none';
     document.getElementById('personajes').style.display='none';
     document.getElementById('sombras').style.display='none';
     document.getElementById('gameplay').style.display='';
@@ -21,6 +32,7 @@ function showGameplay(){
 }
 
 function showConsejos(){
+    document.getElementById('sinopsis').style.display='none';
     document.getElementById('personajes').style.display='none';
     document.getElementById('sombras').style.display='none';
     document.getElementById('gameplay').style.display='none';

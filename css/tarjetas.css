@@ -1,9 +1,49 @@
+/*---------------------------------SINOPSIS--------------------------------------*/
+.containerSinopsis{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.containerSinopsis .Sinopsis{
+    width: 100%;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: auto;
+    text-align: left;
+    transition: all 0.25s;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerSinopsis .Sinopsis h4{
+    width: 100%;
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+}
+
+.containerSinopsis .Sinopsis p{
+    margin: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.divisionImg {
+    border-top: 1px solid #121212;
+    height: 2px;
+    width: 80%;
+    padding: 0;
+    margin: auto;
+  }
 
 /*---------------------------PERSONAJES Y ENEMIGOS-------------------------------*/
 .container{
     width: 100%;
-    max-width: 400px;
-    height: 500px;
+    max-width: 450px;
+    height: 550px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,8 +51,8 @@
 }
 
 .container .card{
-    width: 300px;
-    height: 450px;
+    width: 400px;
+    height: 500px;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px;
@@ -24,8 +64,8 @@
 
 
 .container .card img{
-    width: 100%;
-    max-width: 300px;
+    max-width: 100%;
+    width: 300px;
     height: 200px;
 }
 
@@ -59,7 +99,7 @@
 
 
 
-/*---------------------------GAMEPLAY-------------------------------*/
+/*---------------------------GAMEPLAY y CONSEJOS-------------------------------*/
 .containerGameplay{
     width: 100%;
     display: flex;
@@ -143,4 +183,4 @@
     }
 }
 
-/*---------------------------CONSEJOS-------------------------------*/
+/*----------------------------------------------------------*/

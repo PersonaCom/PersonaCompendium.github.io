@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Persona Index</title>
     <link rel="icon" href="../img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="../css/personaIntro.css">
+    <link rel="stylesheet" href="../css/personaIndex.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/tarjetas.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -72,7 +72,7 @@
     <div class="capa-gradient"></div>
     <div class="container-details">
         <div class="details">
-            <h1>SHIN MEGAMI TENSEI: PERSONA 1</h1>
+            <h1>MEGAMI IBUNROKU PERSONA</h1>
         </div>
     </div>
 </div>
@@ -113,6 +113,7 @@
 <div class="wrapper">
     <nav>
         <div class="items">
+            <input class="item" type="submit" value="Sinopsis" onclick="showSinopsis()">
             <input class="item" type="submit" value="Personajes" onclick="showPersonajes()">
             <input class="item" type="submit" value="Sombras" onclick="showSombras()">
             <input class="item" type="submit" value="Gameplay" onclick="showGameplay()">
@@ -121,12 +122,47 @@
     </nav>
     <br>
     <div class="gallery">
+        <div id="sinopsis" style="display: none;">
+            <div class="imageSinopsis" data-name="bag">
+                <span>
+                    <div class="containerSinopsis">
+                        <div class="Sinopsis">
+                            <h4>Historia</h4>
+                            <div class="divisionImg"></div>
+                            <p>
+                                Megami Ibunroku Persona gira en torno al protagonista y a sus compañeros 
+                                de clase en la Secundaria St. Hermelin en la Ciudad Mikage.  Hidehiko 
+                                Uesugi habla con todos sus amigos para jugar un juego llamado "Persona”. 
+                                Mientras juegan, los estudiantes pierden la conciencia y conocen a 
+                                Philemon, quien les da la habilidad de invocar el reflejo de sus 
+                                personalidades, que son conocidos como “Personas”.
+                            </p>
+                            <p>
+                                Poco tiempo después, el protagonista y sus amigos visitan a Maki Sonomura, 
+                                quien está enferma y en cama. Durante la visita, ellos descubren que la 
+                                ciudad está cambiando y demonios están rondando en las calles. La madre 
+                                de Maki le dice al equipo, que trabaja como ingeniero en SEBEC, y que el 
+                                culpable detrás del incidente es Takahisa Kandori, el presidente de la compañía.
+                            </p>
+                            <p>
+                                Después de llevar a la madre de Maki a la escuela, las acciones del 
+                                protagonista deciden el curso de la historia. Si el protagonista opta ir por 
+                                Kandori, comenzará el Capítulo SEBEC que es la historia principal del juego. 
+                                O podría elegir investigar una serie de incidente que ocurrieron en la escuela 
+                                hace ocho años e iniciar el Snow Queen Quest, una historia alternativa 
+                                irrelevante al incidente de SEBEC.
+                            <p>
+                        </div>
+                    </div>       
+                </span>
+            </div>
+        </div>
         <div id="personajes" style="display: none;">
             <div class="image" data-name="bag">
                 <span>
                     <div class="container">
                         <div class="card">
-                            <img src="https://i.pinimg.com/originals/d1/7c/c5/d17cc5d02889092b7b5f07287d8c44f1.jpg" alt="">
+                            <img src="../img/(Protagonist)_Naoya_Toudou.png" alt="">
                             <div class="divisionImg"></div>
                             <h4>Personaje</h4>
                             <h4>Persona</h4>
@@ -240,8 +276,8 @@
             <div class="footer-col">
                 <h4>Siguenos</h4>
                 <div class="social-links">
-                    <a href="https://www.youtube.com/channel/UCtNH4JtwczngexoZ8Ib6d9g"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.patreon.com/PersonaCompendium"><i class="fab fa-patreon"></i></a>
+                    <a href="https://www.youtube.com/channel/UCtNH4JtwczngexoZ8Ib6d9g" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.patreon.com/PersonaCompendium" target="_blank"><i class="fab fa-patreon"></i></a>
                 </div>
             </div>
             <img class="imgFooter" src="../img/footer-escuelas.png" alt="">
